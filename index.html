@@ -20,6 +20,22 @@
         .text-rose-gold { color: #b76e79; }
         .border-rose-gold { border-color: #b76e79; }
 
+        /* Scrollbar elegante */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #fff1f2;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #fda4af;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #fb7185;
+        }
+
         /* Estilos para o input de data nativo */
         input[type="date"]::-webkit-calendar-picker-indicator {
             background: transparent;
@@ -34,7 +50,6 @@
             width: auto;
         }
         
-        /* Remover o estilo padrão de foco do seletor em alguns browsers */
         input[type="date"]::-webkit-inner-spin-button,
         input[type="date"]::-webkit-clear-button {
             display: none;
@@ -44,13 +59,13 @@
 <script type="importmap">
 {
   "imports": {
-    "firebase/": "https://esm.sh/firebase@^12.7.0/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
     "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "vite": "https://esm.sh/vite@^7.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
     "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3"
+    "react": "https://esm.sh/react@^19.2.3",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/"
   }
 }
 </script>
